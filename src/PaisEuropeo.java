@@ -65,4 +65,15 @@ public class PaisEuropeo {
         }
         return salida;
     }
+    //Ejercicio 2
+    private int poblacionPais(String pais) {
+        return getPoblacion();
+    }
+
+    public double mediaDosPoblaciones(String paisUno, String paisDos) {
+        int poblacionPaisUno = poblacionPais(paisUno);
+        int poblacionPaisDos = poblacionPais(paisDos);
+        double mediaDosPaises = (poblacionPaisUno + poblacionPaisDos) / 2.0;
+        return mediaDosPaises;
+    }
 }
