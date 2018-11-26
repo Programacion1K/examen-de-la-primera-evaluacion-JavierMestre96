@@ -1,0 +1,13 @@
+public class MediaPoblacionDosPaises{
+    private final double NUMERO_PAISES=2.0;
+    public double mediaDosPoblaciones(String paisUno, String paisDos){
+        int poblacionPaisUno=poblacionPais(paisUno);
+        int poblacionPaisDos=poblacionPais(paisDos);
+        double mediaDosPaises=(poblacionPaisUno+poblacionPaisDos)/NUMERO_PAISES;
+        return mediaDosPaises;
+
+    }
+    private int poblacionPais(String pais){
+        return getPoblacion();
+    }
+}
